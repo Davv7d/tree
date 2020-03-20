@@ -31,15 +31,17 @@ class Tree:
         """ get branch by id """
 
         if isinstance(id, int):
-            if len(self.branches) > id:
-                return self.branches[id]
+            if id >= 0:
+                if len(self.branches) > id:
+                    return self.branches[id]
         return None
 
-    def deleteBramch(self, id=None):
+    def deleteBramch(self, id):
         """ delete branch from tree """
 
         if isinstance(id, int):
-            if len(self.branches) > id:
-                del self.branches[id]
-                return True
+            if id >= 0:
+                if len(self.branches) > id:
+                    del self.branches[id]
+                    return True
         return False
