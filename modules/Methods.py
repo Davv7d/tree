@@ -40,17 +40,17 @@ def tree_to_list(tree,list = []):
         return []
     list.append(tree.data)
     for branch in tree.branches:
-        tree_to_list(branch)
+        tree_to_list(branch, list)
     return list
 
 def median(tree):
     '''counting median'''
-
-    tree_list = tree_to_list(tree)
+    tree_list = tree_to_list(tree, [])
     tree_list.sort()
     length = len(tree_list)
-    if (length&2 == 1):
-        return tree_list[length/2]
+    # print(tree_list)
+    if (length%2 == 1):
+        return tree_list[int(length/2)]
     else:
         value = (tree_list[int( length/2) - 1] + tree_list[int( length/2)]) /2
         return value
