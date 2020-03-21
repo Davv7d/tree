@@ -2,11 +2,13 @@
 
 How to use Tree & Count:
     1. Import Tree, and Count:
+    
         from Tree import Tree
         from Count import Count_from_tree as Count
 
-    2. Create Object tree:
-        tree_1 = Tree(1,
+   2. Create Object tree:
+    
+           tree_1 = Tree(1,
               [
                   Tree(2,
                        [
@@ -21,8 +23,9 @@ How to use Tree & Count:
                        ])
               ])
 
-     3. Use methods from Count(example):
-        print(Count.sum_value(tree))
+   3. Use methods from Count(example):
+         
+            print(Count.sum_value(tree))
 
 
  Test:
