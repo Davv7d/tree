@@ -7,7 +7,7 @@ How to use Tree & Count:
         from Count import Count_from_tree as Count
 2. Create Object tree:
     
-           tree_1 = Tree(1,
+           tree = Tree(1,
               [
                   Tree(2,
                        [
